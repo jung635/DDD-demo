@@ -2,7 +2,7 @@ package com.example.demo.user.application;
 
 import com.example.demo.user.domain.User;
 import com.example.demo.user.domain.UserCommand;
-import com.example.demo.user.service.UserService;
+import com.example.demo.user.domain.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

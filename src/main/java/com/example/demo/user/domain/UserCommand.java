@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 
 import lombok.Builder;
 import lombok.Getter;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 public class UserCommand {
 
@@ -12,13 +13,13 @@ public class UserCommand {
     public static class RegisterUserReq {
         private String userId;
         private String name;
-        private String pw;
+        private String password;
 
         public User toEntity() {
             return User.builder()
                 .userId(userId)
                 .name(name)
-                .pw(pw)
+                .password(password)
                 .build();
         }
     }

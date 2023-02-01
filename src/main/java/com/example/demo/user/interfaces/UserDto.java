@@ -12,6 +12,6 @@ public class UserDto {
     public static class RegisterUserReq {
         private String userId;
         private String name;
-        private String pw;
+        private String password;
     }
 }

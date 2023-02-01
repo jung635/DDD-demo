@@ -1,9 +1,6 @@
-package com.example.demo.user.service;
+package com.example.demo.user.domain;
 
 import java.util.List;
-
-import com.example.demo.user.domain.User;
-import com.example.demo.user.domain.UserCommand;
 
 public interface UserService {
     List<User> selectUsers();

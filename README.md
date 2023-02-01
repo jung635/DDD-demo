@@ -7,7 +7,7 @@
 5. Security
    - CSRF 방지
    - 설정파일 암호화(jasypt)
-   - 패스워드 암호화
+   - 패스워드 암호화 (Spring security)
 6. Authentication
    -  OAuth2.0 적용
    -  JWT 기반 인증
