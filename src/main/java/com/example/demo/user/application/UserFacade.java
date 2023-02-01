@@ -1,4 +1,4 @@
-package com.example.demo.application;
+package com.example.demo.user.application;
 
 import com.example.demo.user.domain.User;
 import com.example.demo.user.domain.UserCommand;

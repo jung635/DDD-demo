@@ -2,7 +2,7 @@ package com.example.demo.user.interfaces;
 
 import java.util.List;
 
-import com.example.demo.application.UserFacade;
+import com.example.demo.user.application.UserFacade;
 import com.example.demo.user.domain.UserCommand;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
