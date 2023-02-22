@@ -23,7 +23,9 @@ public class SecurityConfig {
         //http.cors();
         http.csrf().disable();
         http.authorizeHttpRequests()
-                .requestMatchers("/user").permitAll();
+                .requestMatchers("/**").permitAll()
+                .and()
+                .authorizeHttpRequests().requestMatchers("/**").permitAll();
 
         return http.build();
     }

@@ -30,10 +30,10 @@ public class UserController {
     }
 
     @PostMapping(value="/user")
-    public CommonResponse<String> registerUser(@RequestBody UserDto.RegisterUserReq regUserReq) {
-        log.debug("regUserReq: " + regUserReq.toString());
-        UserCommand.RegisterUserReq req = userDtoMapper.of(regUserReq);
-        String userId = userFacade.registerUser(req);
+    public CommonResponse<String> registerUser(@RequestBody UserDto.RegisterUserReq req) {
+        log.debug("registerUser req: " + req.toString());
+        UserCommand.RegisterUserReq reqCommand = userDtoMapper.of(req);
+        String userId = userFacade.registerUser(reqCommand);
         return CommonResponse.success(userId);
     }
     
