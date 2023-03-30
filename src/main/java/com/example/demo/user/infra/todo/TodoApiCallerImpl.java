@@ -21,7 +21,6 @@ public class TodoApiCallerImpl implements TodoApiCaller {
         Call<CommonResponse<String>> call = retrofitTodoApi.addTodo(req);
         return retrofitUtils.responseSync(call)
                 .map(CommonResponse::getData)
-                //.map(RetrofitTodoApiResponse.AddTodo::getToken)
                 .orElseThrow(RuntimeException::new);
     }
 }
