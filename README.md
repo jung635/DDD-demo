@@ -14,6 +14,7 @@
 7. 통신
    - Kafka
    - gRPC
+   - HTTP
 
 Functions
 1. User 등록
