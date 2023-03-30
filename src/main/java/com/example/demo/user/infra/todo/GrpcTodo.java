@@ -1,4 +1,4 @@
-package com.example.demo.user.interfaces.communication;
+package com.example.demo.user.infra.todo;
 
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class GrpcClient {
+public class GrpcTodo {
 
     public String addTodo(final TodoAddRequest request) throws InterruptedException {
         ManagedChannel channel = ManagedChannelBuilder.forAddress("127.0.0.1", 9090)
