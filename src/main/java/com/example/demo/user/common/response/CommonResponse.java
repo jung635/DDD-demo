@@ -14,7 +14,7 @@ public class CommonResponse<T> {
     @SuppressWarnings("unchecked")
     public static <T> CommonResponse<T> success(T data, String message) {
         return (CommonResponse<T>) CommonResponse.builder()
-            .result(Result.SUCESS)
+            .result(Result.SUCCESS)
             .data(data)
             .message(message)
             .build();
@@ -23,7 +23,7 @@ public class CommonResponse<T> {
     @SuppressWarnings("unchecked")
     public static <T> CommonResponse<T> success(T data) {
         return (CommonResponse<T>) CommonResponse.builder()
-            .result(Result.SUCESS)
+            .result(Result.SUCCESS)
             .data(data)
             .build();
     }
@@ -47,6 +47,6 @@ public class CommonResponse<T> {
     }
 
     public enum Result{
-        SUCESS, FAIL
+        SUCCESS, FAIL
     }
 }
